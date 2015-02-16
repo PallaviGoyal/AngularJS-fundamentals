@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+</head>
+
+<body>
+
+	<div ng-app="myApp" ng-controller="myCtrl">
+	 	<p>Name: <input type="text" ng-model="name"></p>
+		<button ng-click=alertName()>Submit</button>
+		<p ng-bind="name"></p>
+ 		<p>{{getName()}}</p>
+	</div>
+
+<script src="myApp.js"></script>
+<script src="myCtrl.js"></script>
+
+</body>
+</html>
